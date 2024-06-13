@@ -1,0 +1,60 @@
+{
+  "name": "@lnear/cache",
+  "description": "Simple LRU and LFU cache implementations for Node.js and the browser.",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "lru",
+    "cache",
+    "lnear"
+  ],
+  "homepage": "https://docs.lnear.dev/cache",
+  "author": {
+    "name": "lnear",
+    "email": "hi@lnear.dev",
+    "url": "https://lnear.dev"
+  },
+  "maintainers": [
+    {
+      "name": "lnear",
+      "email": "hi@lnear.dev",
+      "url": "https://lnear.dev"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lnear-dev/cache.git"
+  },
+  "main": "./dist/lnear-cache.js",
+  "typings": "./dist/lnear-cache.d.ts",
+  "module": "./dist/lnear-cache.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lnear-cache.js",
+      "require": "./dist/lnear-cache.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test-php": "./vendor/bin/pest",
+    "test-both": "npm run test-php && npm run test"
+  },
+  "dependencies": {
+    "perhaps-ts": "^0.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.4.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vitest": "1.6.0",
+    "vite-plugin-dts": "^3.8.3"
+  }
+}
